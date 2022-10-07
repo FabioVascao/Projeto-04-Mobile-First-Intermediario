@@ -71,6 +71,7 @@ p {
   width: 100%;
   border-radius: 22px;
   margin-bottom: 3.2rem;
+  animation: downtop 700ms 350ms backwards;
 }
 .card {
   position: relative;
@@ -90,6 +91,27 @@ h2 {
   position: absolute;
   top: 1.6rem;
   right: 1.6rem;
+  animation: topdown 700ms;
+}
+@keyframes topdown {
+  0% {
+    transform: translateY(-200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
+@keyframes downtop {
+  0% {
+    transform: translateY(200px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
 }
 
 
